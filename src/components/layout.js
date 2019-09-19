@@ -13,7 +13,8 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
-        <h1
+        <div class="header">
+        <h1 
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
@@ -31,10 +32,11 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
+        </div>
       )
     } else {
       header = (
-        <h3
+        <h3 
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
